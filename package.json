@@ -1,0 +1,23 @@
+{
+  "name": "ssg-test",
+  "version": "0.0.1",
+  "description": "A minimal static site generator -- a work in progress.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": {
+    "name": "Andrew Rubin",
+    "email": "arubin78@gmail.com",
+    "url": "http://andrewrub.in"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}

@@ -1,0 +1,20 @@
+html 
+  head 
+    title!= page.meta && page.meta.title ? page.meta.title : globalData.meta.title
+    meta(name="description" content=page.meta && page.meta.description ? page.meta.description : globalData.meta.description)
+  body
+    nav(aria-label="Site navigation")
+      ul
+        each item in globalData.navigation 
+          li: a(href=item.href)!= item.label
+          
+  body
+    main
+      h1!= page.title
+      p!= page.body
+      p This page's route is #[code #{page.route}]
+
+      block content 
+
+    footer
+      p!= globalData.footer.copyright

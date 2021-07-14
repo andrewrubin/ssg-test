@@ -1,0 +1,16 @@
+lang: en-US
+
+meta:
+  title: App Name
+  description: Description coming soon.
+
+navigation:
+  - label: Overview
+    href: /
+  - label: About
+    href: /about
+  - label: Twice-nested
+    href: /about/nested
+
+footer:
+  copyright: Footer here.
